@@ -1,7 +1,7 @@
 # Week 1 Thinking Cap Assignment
 
 ## Screenshot:
-![Spies in the Sky](https://derekwang99.github.com/Images/image.png)
+![Spies in the Sky](https://github.com/derekwang99/DH151/blob/main/Images/image.png?raw=true)
 
 ## Link: 
 https://www.buzzfeednews.com/article/peteraldhous/spies-in-the-skies
