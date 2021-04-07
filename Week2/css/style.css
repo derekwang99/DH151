@@ -22,7 +22,7 @@ body {
 	padding:13px;
     background-color: rgb(62, 120, 196);
 	font-size: 30px;
-	color: rgb(255, 246, 246);
+	color: rgb(255, 232, 232);
 }
 .sidebar {
 	grid-area: sidebar;
