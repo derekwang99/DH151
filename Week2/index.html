@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<title>Hello World</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="header">
+		Derek's Map
+	</div>
+	<div class="sidebar">
+		<b> My Favorite Places That I have Traveled To </b> </br></br>
+
+		This map shows a few of my favorite places I have traveled to before the pandemic.
+		By far my absolute favorite spots were Taiwan and Singapore. Taiwanese night markets are abound with lots of activities, eateries, and shopping.
+		Singapore was just a great place to get good food from many different cultures. My favorite dish from Singapore was probably the Hainanese Chicken Rice.
+		I was supposed to go to Vietnam and Korea last summer, but COVID-19 put a stop to those plans. I do hope to visit those countries in the near future, though!
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+
+    <script>
+
+		let data = [
+			{
+				'title': 'Taipei, Taiwan',
+				'lat': 25.0330,
+				'lon': 121.5654,
+				'description': 'Went with my dad to Taiwan in 2019. He ended up leaving first because of work, but I stayed and explored Taipei by myself for a week.'
+			},
+			{
+				'title': 'St. Petersburg, Russia',
+				'lat': 59.9398,
+				'lon': 130.3146,
+				'description': 'Toured Europe when I was younger with my mom and brother. Ended up liking the State Hermitage Museum the most in Russia. '
+			},
+			{
+				'title': 'Shanghai, China',
+				'lat': 31.2304,
+				'lon': 121.4737,
+				'description': 'Went to vacation in China a long time ago. I remembered not liking it that much because I was always on alert since thieves are common. My mom ended up getting scammed (thankfully it was only $20).'
+			},
+			{
+				'title': 'Taichung, Taiwan',
+				'lat': 24.1477,
+				'lon': 120.6736,
+				'description':'Went with my mom to Taiwan to visit relatives. Taichung is her birthplace and she visited her childhood home. She ended up seeing her neighbor, of whom she had not talked to for around two decades.'
+			},
+			{
+				'title': 'Singapore, Republic of Singapore',
+				'lat': 1.3521,
+				'lon': 103.8198,
+				'description': 'Singapore was extremely fun to visit simple because of the food. Aside from Singaporean food, they had amazing Malaysian, Indian, and Chinese food. Singapore is such an interesting and diverse place! '
+			},
+			{
+				'title': 'Tainan, Taiwan',
+				'lat': 22.9997,
+				'lon': 120.2270,
+				'description':' Tainan is my dad\'s birthplace--I came here to attend my grandmother\'s funeral. As a result, I got to stay with my extended family and had lots of fun explaining American culture to them.'
+			}
+		]
+        var map = L.map('map').setView([34.0697,-118.4432], 17);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+		data.forEach(function(item){
+			var marker = L.marker([item.lat,item.lon]).addTo(map)
+			.bindPopup(item.title + ":</br> (" + item.lat + ", " + item.lon + ")</br>" + "</br>" + item.description)
+			.openPopup();	
+		});
+
+    </script>
+
+</body>
+</html>
+
