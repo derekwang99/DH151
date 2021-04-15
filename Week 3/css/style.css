@@ -34,9 +34,14 @@ body {
 }
 
 .sidebar-item {
+
+
 	padding: 10px;
-	background: gainsboro;
-	border: 1 px solid gray;
-	margin: 5 px;	
-	color: #333;
+	background: rgb(159, 178, 206);
+	color:rgb(255, 255, 255);
+	border: 2px;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px;
+	font-family:'Tahoma';
 }
