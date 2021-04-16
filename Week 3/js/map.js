@@ -62,7 +62,6 @@ data.forEach(function(item, index){
 	myMarkers.addLayer(marker)
 
 	$('.sidebar').append(`<div class = "sidebar-item" onclick = "flyToIndex(${index})">${item.title} </div>`)
-	$(.'sidebar').append
 });
 
 myMarkers.addTo(map)
