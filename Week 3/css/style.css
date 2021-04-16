@@ -39,14 +39,10 @@ body {
 
 	padding: 10px;
 	background: rgb(159, 178, 206);
-	color:rgb(255, 255, 255);
+	color:rgb(109, 5, 5);
 	border: 2px;
 	text-align: center;
 	font-size: 18px;
 	margin: 10px;
 	font-family:'Tahoma';
-}
-
-.sidebar-item:hover {
-	background-color: hsl(221, 48%, 53%);
 }
