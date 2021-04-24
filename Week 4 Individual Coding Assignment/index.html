@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<!-- papaparse for csv data -->
+	<script src="js/papaparse.min.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		Estimate of Plastic Pollution in the World's Oceans
+	</div>
+	<div class="sidebar">
+		[info about pollution being aggregated in areas of the world] <br></br>
+		Click below to filter pollution aggregation by year <br></br>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<div class="footer">
+		Source: <a href="https://arc-gis-hub-home-arcgishub.hub.arcgis.com/datasets/schools-BE::estimate-of-plastic-pollution-in-the-world-s-oceans-1-01-4-75/data?geometry=-0.845%2C-54.081%2C85.287%2C50.378&orderBy=DATE&page=110">ArcGIS Hub</a>
+	</div>
+
+	<script src="js/map.js"></script>
+
+</body>
+</html>
