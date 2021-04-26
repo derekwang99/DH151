@@ -26,6 +26,14 @@ body {
 	font-size: 2em;
 }
 
+.h1 {
+	font-size: 20px
+}
+
+.stuff {
+	padding: 20px
+}
+
 .sidebar {
 	color: rgb(255, 255, 255);
 	grid-area: sidebar;
