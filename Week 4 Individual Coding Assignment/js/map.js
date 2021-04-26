@@ -3,7 +3,7 @@ var map;
 let lat = 0;
 let lon = 0;
 let zl = 3;
-var path = "data/plastic_pollution.csv";
+var path = "data/plastic_pollution_2007.csv";
 let markers = L.featureGroup();
 let time2007 = ['2007'];
 let time2008 = ['2008'];
